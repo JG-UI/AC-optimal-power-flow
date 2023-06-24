@@ -1,4 +1,3 @@
-import numpy as np
 import matplotlib.pyplot as plt
 from pypower.api import runopf, ppoption
 from pypower import case14
@@ -24,7 +23,7 @@ case_data['gen'][:, 9] = min_gen_power  # Pmin
 min_gen_Qpower = -20
 case_data['gen'][:, 4] = min_gen_Qpower  # Qmin
 
-# Modify generator power cost
+# Modify generator power cost coefficients 
 
 coeff_gen = [[8e-02, 1.50000e+01],
        [2.50000e-01, 2.00000e+01],
